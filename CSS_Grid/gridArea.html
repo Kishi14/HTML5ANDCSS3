@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Css Grid Area</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 800px;
+            display: grid;
+            grid-template-rows: 1fr 3fr 3fr 3fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 'header header header'
+            'section-1 section-1 aside'
+            'section-1 section-1 aside'
+            'section-2 section-2 .'
+            'footer footer footer';
+            grid-gap: 20px 30px;
+            background: brown;
+        }
+
+        .items{
+            background: steelblue;
+            border: 1px solid black;
+        }
+
+        .item1{
+            grid-area: header;
+        }
+        .item2{
+            grid-area: section-1;
+        }
+        .item3{
+            grid-area: aside;
+        }
+        .item4{
+            grid-area: section-2;
+        }
+        .item5{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+                <div class="items item1">Item1</div>
+                <div class="items item2">Item2</div>
+                <div class="items item3">Item3</div>
+                <div class="items item4">Item4</div>
+                <div class="items item5">Item5</div>
+        </div>
+</body>
+</html>

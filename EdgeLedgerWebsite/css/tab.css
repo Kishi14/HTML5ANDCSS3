@@ -1,0 +1,59 @@
+/* Tab Styling */
+
+/* NavBar Styling */
+#navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+}
+
+#logo, .links{
+    flex: 1;
+}
+
+#logo{
+    margin-left: 0.3rem;
+}
+
+/* ShowCase */
+.showcase h1{
+    font-size: 3.5rem;
+}
+
+/* What we do */
+.section-investment, .section-portfolio, .section-Tax{
+    padding: 2rem;
+}
+
+/* WHo we are */
+#Who{
+    display: flex;
+    height: 60rem;
+    flex-direction: column;
+}
+#who{
+    flex: 1;
+}
+.who-img{
+    display: block;
+    flex: 1;
+}
+.who-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.map{
+    height: 25rem;
+}
+
+footer{
+    height: 4rem;
+}
+
+footer p{
+    font-size: 1rem;
+}

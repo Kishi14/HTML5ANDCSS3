@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid Responsive</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 500px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+            grid-gap: 20px 30px;
+            background: brown;
+        }
+        .items{
+            background: steelblue;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+                <div class="items item1">Item1</div>
+                <div class="items item2">Item2</div>
+                <div class="items item3">Item3</div>
+                <div class="items item4">Item4</div>
+                <div class="items item5">Item5</div>
+                <div class="items item6">Item6</div>
+                <div class="items item7">Item7</div>
+            </div>
+</body>
+</html>

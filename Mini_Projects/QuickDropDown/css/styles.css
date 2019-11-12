@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* NavBar Styling */
+.navBar{
+    width: 100%;
+    height: 5rem;
+    background: #333;
+}
+
+.navBar .outerLinks{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    cursor: pointer;
+    color: white;
+    padding: 2rem;
+}
+.outerLinks li:nth-child(3){
+    position: relative;
+    font-size: 1.3rem;
+}
+.innerLinks{
+    background: coral;
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    top: 70px;
+    left: 60px;
+}
+.innerLinks::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid coral;
+    position: absolute;
+    top: -10px;
+    left: 1px;
+}
+.innerLinks a{
+    display: block;
+    flex-basis: 50px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s;
+}
+.innerLinks li a:hover{
+    color: cyan;
+    border-bottom: 5px solid goldenrod;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.outerLinks  a:hover{
+    color: coral;
+}
+.outerLinks li:nth-child(3):hover{
+    color: coral;
+}
+.outerLinks li:nth-child(3):hover > .innerLinks{
+    display: block;
+}
+.innerLinks{
+    display: none;
+}

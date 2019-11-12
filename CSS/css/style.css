@@ -1,0 +1,41 @@
+
+/* Font Styling */
+/* *{
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: oblique;
+}
+p{
+    line-height: 1.5;
+
+} */
+
+
+/* Color Types */
+
+/* h1{
+    color: rgba(40, 189, 45, 0.5);
+}
+
+p{
+    color: #4a2390;
+} */
+
+*{
+    box-sizing: border-box;
+}
+
+/* Background and Border */
+p{
+    height: 1000px;
+    border-top-left-radius: 2000px;
+    background: url('../images/muzammil-soorma-ayV1mD3HGyg-unsplash.jpg') no-repeat center center/cover;
+}
+
+h1{
+    border: 3px solid coral;
+    padding: 20px 10px 25px 5px;
+}

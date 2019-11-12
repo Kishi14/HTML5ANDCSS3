@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box Shadow</title>
+    <style>
+        :root{
+            --backgrd-color: coral;
+            
+        }
+    .container{
+        width: 200px;
+        height: 200px;
+        background: var(--backgrd-color);
+        margin: auto;
+        text-align: center;
+        /* box-shadow: inset offset-x offset-y blur-radius color; */
+        box-shadow: 5px 5px 12px rgb(5, 32, 54), -5px -10px 10px cornflowerblue;
+    }
+    .container + h1{
+        text-align: center;
+        color: coral;
+        text-shadow: 20px 40px 1px rgb(3, 37, 65);
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, architecto.</p>
+    </div>
+    <h1>Welcome Here</h1>
+</body>
+</html>

@@ -1,0 +1,92 @@
+:root{
+    --page1bgColor: coral;
+    --page2bgColor: steelblue;
+    --page3bgColor: darkgreen;
+    --darkColor: #333;
+    --hoverColor: rgb(233, 124, 60);
+    --hoverDark: #fff;
+    --lightColor: #aaa;
+}
+.button a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    color: black;
+    transition: background 0.5s ease-in-out;
+}
+#page1 a,  #page2 a:last-child{
+    background: var(--lightColor);
+}
+
+#page1 a:hover,  #page2 a:last-child:hover{
+    background: var(--hoverColor);
+}
+
+#page3 a,#page2 a:first-child{
+    background: var(--darkColor);
+}
+#page3 a:hover,#page2 a:first-child:hover{
+    background: var(--hoverDark);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: white;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+.page h1{
+    font-size: 40px;
+}
+
+/* Adding Animation to text */
+#page1 h1{
+    transform: translateY(-1200px);
+    animation-name: animate1;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+@keyframes animate1{
+    to{
+        transform: translateY(0px);
+    }
+}
+
+#page1 p{
+    transform: translateX(-2000px);
+    animation-name: animate2;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+@keyframes animate2{
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+.page p{
+    font-size: 20px;
+}
+#page1{
+    background: var(--page1bgColor);
+}
+#page2{
+    background: var(--page2bgColor);
+}
+#page3{
+    background: var(--page3bgColor);
+}

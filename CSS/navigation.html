@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation Menu</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .navBar{
+            list-style: none;
+            background: #444;
+            overflow: auto;
+            height: 50px;
+        }
+        .navBar li{
+            height: 100%;
+            float: left;
+            width: 10%;
+            text-align: center;
+        }
+
+        .navBar a{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            padding-top: 10px;
+        }
+        .navBar a:hover{
+            background: #aaa;
+            color: coral;
+        }
+        .sideBar{
+            border: 2px solid coral;
+            width: 20%;
+            margin: 20px;
+            padding: 20px;
+            height: 200px;
+        }
+        .sideBar{
+            list-style: none;
+        }
+        .sideBar li{
+            border-bottom: 2px dashed grey;
+            padding: 8px 0;
+            width: 80%;
+        }
+        .sideBar a{
+            text-decoration: none;
+            text-align: center;
+        }
+        .sideBar li:last-child{
+            border: none;
+        }
+        .sideBar a:hover{
+            color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <ul class="navBar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <ul class="sideBar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    
+</body>
+</html>

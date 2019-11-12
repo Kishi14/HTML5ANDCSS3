@@ -1,0 +1,255 @@
+body{
+    font-family:'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.5;
+}
+
+/* NavBar Styling */
+#navBar{
+    background: #111;
+    padding: 5px;
+    height: 8rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+#logo p{
+    font-size: 1.6rem;
+}
+
+.span-text{
+    color: rgb(59, 230, 59);
+}
+
+/* Link Styling */
+.links{
+    list-style: none;
+    width: 80%;
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: all 1s;
+}
+
+.links a:hover{
+    background: rgb(59, 230, 59);
+
+}
+
+/* Showcase Styling */
+.showcase{
+    height: 90vh;
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0,0,0,0.6);
+    padding: 0 2rem;
+    align-items: center;
+    position: relative;
+}
+.showcase::before{
+    content: '';
+    background: url('../images/showcase.jpg') no-repeat center center/ cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.showcase h1{
+    font-size: 2.6rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.showcase p{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 2.5rem;
+}
+.btn{
+    text-decoration: none;
+    background: green;
+    color: white;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: all 1s;
+}
+
+.btn:hover{
+    background: rgb(37, 226, 37);
+    color: #111;
+}
+
+
+/* What we do styling */
+#what h2{
+    font-size: 1.6rem;
+    color: rgb(9, 37, 114);
+    text-align: center;
+    text-decoration: underline;
+}
+.sections{
+    display: flex;
+    height: 50rem;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.section-portfolio, .section-Tax, .section-investment{
+    padding: 1rem;
+    height: 15rem;
+    text-align: center;
+}
+.inv1, .por1, .tax1{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+.inv1 p, .por1 p, .tax1 p{
+    margin-left: 0.7rem;
+    font-size: 1.3rem;
+}
+.inv2 p, .por2 p, .tax2 p{
+    font-size: 1.1rem;
+}
+.section-portfolio{
+    background:  teal;
+}
+.sections i{
+    padding: 1rem;
+    background: rgb(59, 230, 59);
+    border-radius: 50%;
+}
+
+.section-portfolio p{
+    color: white;
+}
+
+/* Styling Who We Are Section */
+.who-img{
+    display: none;
+}
+#who{
+    border-top: 2px solid coral;
+    background: #333;
+    height: 23rem;
+    text-align: center;
+    color: white;
+    padding: 0 1rem;
+}
+
+#who h3{
+    font-size: 1.6rem;
+    color: rgb(245, 69, 92);
+    text-decoration: underline;
+}
+
+#who p{
+    font-size: 1.2rem;
+}
+
+.empList{
+    text-align: left;
+    color: rgb(155, 33, 236);
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+.empList li{
+    padding-left: 0.4rem;
+    margin-bottom: 0.2rem;
+}
+
+/* Styling Contact */
+.contact-section{
+    background: rgb(70, 212, 70);
+    border-top: 2px solid coral;
+    color: #111;
+}
+.contact-form{
+    padding: 1rem;
+}
+.contact-form h2{
+    margin: 0 0;
+    padding-top: 0.7rem;
+    font-size: 2rem;
+    color: rgb(12, 54, 117);
+    text-align: center;
+    text-decoration: underline;
+}
+
+.contact-form p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+label{
+    display: block;
+    font-size: 1rem;
+}
+input{
+    display: block;
+    width: 80%;
+    height: 1.6rem;
+    border-radius: 5px;
+    margin: 0.8rem 1rem;
+}
+textarea{
+    width: 80%;
+    border-radius: 5px;
+    margin: 0.8rem 1rem;   
+}
+input[type="submit"]{
+    display: block;
+    width: 150px;
+    border: none;
+    height: 2rem;
+    background: #333;
+    color: white;
+}
+input[type="submit"]:hover{
+    color: coral;
+    background: #444;
+}
+
+.map{
+    height: 20rem;
+    padding: 0;
+}
+.map img{
+    display: block;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer Styling */
+footer{
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid coral;
+}
+footer p{
+    font-size: 0.8rem;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form and Input</title>
+</head>
+<body>
+    <form action="#">
+        <label for="userName">Name: </label>
+        <input type="text" name="usr_name" id="userName" autocomplete="family-name">
+        <br>
+        <label for="userEmail">Email: </label>
+        <input type="email" name="usr_email" id="userEmail" placeholder="john18gmail.com" required>
+        <br>
+        <label for="userPassword">Password: </label>
+        <input type="password" name="usr_name" id="userPassword">
+        <br>
+        <label for="userPhone">Mob.No: </label>
+        <input type="number" name="usr_mob" id="userPhone">
+        <br>
+        <label for="userDOB">DOB: </label>
+        <input type="date" name="usr_dob" id="userDOB">
+        <br>
+        <label for="userAge">Age: </label>
+        <input type="radio" name="usr_age" id="userAge" value="above 18" checked>18+
+        <input type="radio" name="usr_age" id="userAge" value="Minor">Below 18
+        <br>
+        <label for="userFood">Favourite Food: </label>
+        <input type="checkbox" name="srk" id="userFood">Shah Rukh Khan
+        <input type="checkbox" name="vishnu" id="userFood">Vishnuvardhana
+        <input type="checkbox" name="ganesh" id="userFood">Golden Star Ganesh
+        <br>
+
+        <textarea name="message"  cols="30" rows="10"></textarea>
+        <br>
+        <label for="myLang">Select your language:</label>
+        <select name="Language" id="myLang">
+            <option value="english">English</option>
+            <option value="kannada" selected>Kannada</option>
+            <option value="hindi">Hindi</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>

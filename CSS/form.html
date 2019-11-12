@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Styling</title>
+    <style>
+        body{
+            background: rgb(10, 9, 31);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .sign-up{
+            background: white;
+            max-width: 400px;
+            height: 630px;
+            padding: 10px 20px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .sign-up h1{
+            margin-bottom: 0;
+            margin-top: -5px;
+        }
+        label, input{
+            display: block;
+            margin: 10px 0;
+        }
+        label{
+            text-align: left;
+            font-size: 20px;
+        }
+        input{
+            width: 100%;
+            height: 30px;
+            border-radius: 5px;
+        }
+        input[type="submit"]{
+            width: 30%;
+            margin: 20px auto;
+            background: rgb(13, 51, 13);
+            height: 40px;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(109, 231, 109);
+        }
+        .sign-up + p{
+            color: white;
+            margin: -30px auto 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" class="sign-up">
+        <h1>Sign Up</h1>
+        <p>It's free and only takes a minute.</p>
+        <div class="inputs">
+            <label for="firstName">First Name</label>
+            <input type="text" name="usr_firstName" id="firstName">
+            <label for="lastName">Last Name</label>
+            <input type="text" name="usr_lastName" id="lastName">
+            <label for="email">Email</label>
+            <input type="email" name="usr_mail" id="email">
+            <label for="user_password">Password</label>
+            <input type="password" name="usr_pwd" id="user_password">
+            <label for="user_password_conf">Confirm Password</label>
+            <input type="password" name="usr_pwd_conf" id="user_password_conf">
+            <input type="submit" value="Sign Up">
+        </div>
+        <div class="footer">
+            <p>By Clicking on Sign Up, you agree to terms and conditions.</p>
+            <p><a href="#">Terms and Conditions.</a></p>
+        </div>
+    </form>
+    <p>
+        Already Have an account <span class="login"><a href="#">Login Here</a></span>
+    </p>
+</body>
+</html>

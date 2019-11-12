@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Before and After</title>
+    <style>
+        /* .div1 > input[type="text"]{
+            border-radius: 10px;
+            color: rebeccapurple;
+            display: none;
+        }
+        .div1 a::after{
+            content: "->";
+        }
+        .div2::after{
+            content: "*";
+            padding-left: 10px;
+            /* color: red;
+            padding-left: 3px; 
+        }
+        */
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .section{
+            text-align: center;
+            padding: 30vh 0;
+            color: blueviolet;
+            height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+        .section::before {
+        content: '';
+        background: url('showcase.jpg')
+          no-repeat center center/cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 1;
+      }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="div1">
+        <a href="#">Google</a>
+        <label for="Name">Name</label>
+        <div class="div2">
+            <input type="text" name="usr_name" id="Name" placeholder="Kishore">
+        </div>
+    </div> -->
+    <div class="section">
+        <h1>Welcome To The Website</h1>
+    </div>
+</body>
+</html>
